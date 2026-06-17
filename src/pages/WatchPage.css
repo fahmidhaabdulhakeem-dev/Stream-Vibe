@@ -1,0 +1,33 @@
+.watch { display: flex; gap: 24px; padding: 20px 16px; }
+.watch__main { flex: 1; min-width: 0; }
+.watch__player {
+  width: 100%; padding-top: 56.25%; position: relative;
+  border-radius: 12px; overflow: hidden; background: #000;
+}
+.watch__player iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+.watch__title { font-size: 20px; font-weight: 700; margin: 16px 0 12px; line-height: 1.4; }
+.watch__meta { display: flex; flex-direction: column; gap: 12px; }
+.watch__channel-info { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.watch__avatar { width: 40px; height: 40px; border-radius: 50%; }
+.watch__channel-name { font-size: 15px; font-weight: 600; }
+.watch__subs { font-size: 13px; color: var(--text-muted); }
+.watch__subscribe-btn {
+  margin-left: auto; padding: 10px 20px;
+  background: var(--text-primary); color: var(--bg-primary);
+  border-radius: 20px; font-weight: 700; font-size: 14px;
+}
+.watch__actions { display: flex; gap: 8px; flex-wrap: wrap; }
+.watch__action-btn {
+  padding: 8px 16px; background: var(--bg-secondary);
+  border-radius: 20px; font-size: 14px; border: 1px solid var(--border);
+}
+.watch__action-btn:hover { background: var(--bg-hover); }
+.watch__description {
+  background: var(--bg-secondary); border-radius: 12px;
+  padding: 16px; margin-top: 16px; font-size: 14px;
+  color: var(--text-secondary); line-height: 1.6;
+}
+.watch__sidebar { width: 380px; flex-shrink: 0; display: flex; flex-direction: column; gap: 12px; }
+.watch__related-title { font-size: 16px; font-weight: 600; margin-bottom: 4px; }
+.watch__not-found { text-align: center; padding: 100px 20px; }
+@media (max-width: 900px) { .watch { flex-direction: column; } .watch__sidebar { width: 100%; } }

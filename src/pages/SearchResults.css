@@ -1,0 +1,6 @@
+.search-results { padding: 20px; }
+.search-results__heading { font-size: 20px; margin-bottom: 4px; }
+.search-results__heading span { color: var(--accent); }
+.search-results__count { font-size: 14px; color: var(--text-muted); margin-bottom: 20px; }
+.search-results__empty { text-align: center; margin-top: 80px; color: var(--text-muted); font-size: 18px; }
+.search-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
